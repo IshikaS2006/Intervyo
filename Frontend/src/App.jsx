@@ -19,6 +19,7 @@ import LearningHub from './components/Dashboard/LearningHub';
 import BlogPlatform from './components/Blogs/BlogPlatform';
 import Achievements from './components/Dashboard/Achievements';
 import AIChatbot from './components/Chatbot/AiChatBot';
+import NotFound from './pages/NotFound'; // Import the 404 page
 import FAQ from "./pages/FAQ";
 import Analytics from './pages/Analytics';
 import NotFound from './pages/NotFound';
@@ -52,6 +53,17 @@ function App() {
         <Route path='/settings' element={<Settings />} />
         <Route path="/blog" element={<BlogPlatform />} />
         <Route path='/achievements' element={<Achievements />} />
+        <Route 
+          path="/interview-setup" 
+          element={
+            <ProtectedRoute>
+              <InterviewSetup />
+            </ProtectedRoute>
+          } 
+        />
+        
+        {/* UPDATED: Use InterviewWrapper instead of InterviewRoom directly */}
+          path="/analytics" 
         <Route
           path="/interview-setup"
           element={
@@ -80,6 +92,10 @@ function App() {
             </ProtectedRoute>
           }
         />
+        
+        {/* Add 404 route as the last route - catches all undefined routes */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsAndConditions />} />
         <Route path='/*' element={<NotFound />} />
