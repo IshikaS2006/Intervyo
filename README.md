@@ -99,6 +99,30 @@ If it doesn’t help you perform better in a real interview, it doesn’t belong
 - **Route:** `/practice-lab`
 - Requires microphone permission in the browser (Chrome recommended)
 
+### 🎬 Interview Replay System (NEW)
+- **Full Playback**: Review completed interviews with complete conversation history
+- **Timestamped Notes**: Add personal notes at any point with categorization (improvement, strength, mistake, learning)
+- **Smart Bookmarks**: Quick-jump to important moments in the interview
+- **Resume Functionality**: Pick up where you left off during review sessions
+- **Global Search**: Search across all notes and bookmarks from all interviews
+- **View Analytics**: Track how often you review each interview and total watch time
+- **Secure Sharing**: Generate share links to get feedback from mentors or study buddies
+- **Self-Reflection**: Identify patterns and track improvement over time
+- **Route:** `/api/replay`
+- Perfect for: Post-interview analysis, mentor feedback, peer review, progress tracking
+
+### 🎯 AI-Powered Weakness Predictor & Attack Plan (NEW - OUT OF BOX!)
+- **Predictive Intelligence**: Analyzes your last 20 interviews to predict where you'll fail BEFORE your next interview
+- **Personalized Attack Plans**: 3-phase improvement strategy (Emergency Fixes → Strengthen Core → Polish & Perfect)
+- **Micro-Challenges**: 15 bite-sized, actionable tasks targeting your specific weaknesses (30-90 min each)
+- **Success Probability**: Get real probability scores for easy/medium/hard interviews and specific companies
+- **Real-Time Progress Tracking**: Improvement score, completion percentage, trend analysis (improving/declining/stable)
+- **AI Insights**: Hidden strengths, blind spots, quick wins, peer comparison, long-term goals
+- **Weakness Categories**: Tracks 10 areas (technical-depth, system-design, coding-efficiency, communication-clarity, etc.)
+- **Severity Levels**: Critical (urgent), High (significant), Medium (polish needed), Low (strengths)
+- **Route:** `/api/attack-plan`
+- Unique value: **Proactive vs Reactive** - Know your failure points before they happen, not after
+
 ---
 
 ## 🛠 Tech Stack
